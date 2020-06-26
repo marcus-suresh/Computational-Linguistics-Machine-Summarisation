@@ -2,7 +2,7 @@
 A repository that produced human readable summarises of text
 
 
-#Treasury Speech x1.2 compression
+# Treasury Speech x1.2 compression (Low Threshold --Verbose)
 ```
 However, this will still be the single biggest economic shock Australia 
 has faced in living memory. As the Secretary of the Treasury, I take 
@@ -31,18 +31,44 @@ of expected employees likely to access the JobKeeper program. That over 99 per c
 completed, suggests the form was well-designed. 2 - COVID-19 Daily Cases, sourced from the Department of Health.
 ```
 
-#Treasury Speech x1.3 compression
+# Treasury Speech x1.3 compression (Medium threshold)
 ```
-However, this will still be the single biggest economic shock Australia has faced in living memory. Costing approach for JobKeeper
-The JobKeeper program was deliberately designed as a demand driven program. As is the case for any demand driven program, the level of uncertainty around the individual program’s costing is larger than other program designs. We did assess that given the design of the program and the size of the subsidy, businesses had a strong incentive to participate in the program. However, the level of restrictions were broadly maintained, and there was not a move to tighten further to allow only essential activities. Such a move would have restricted activities such as construction, manufacturing and non-essential retail more broadly. This was in line with subsequent announcements by other forecasters. We also began to receive information about the economic impact, from data and through the business liaison program. The economic outlook will continue to evolve. Enrolments increased steadily from that period onwards, as did the indications of the number of employees covered. At this point, they provided an estimate to the ATO of the number of eligible employees they were likely to have. That over 99 per cent of forms were correctly completed, suggests the form was well-designed. 2 - COVID-19 Daily Cases, sourced from the Department of Health.
+However, this will still be the single biggest economic shock Australia has faced in living memory. 
+Costing approach for JobKeeper
+The JobKeeper program was deliberately designed as a demand driven program. As is the case for 
+any demand driven program, the level of uncertainty around the individual program’s costing is 
+larger than other program designs. We did assess that given the design of the program and the 
+size of the subsidy, businesses had a strong incentive to participate in the program. However, 
+the level of restrictions were broadly maintained, and there was not a move to tighten further 
+to allow only essential activities. Such a move would have restricted activities such as construction, 
+manufacturing and non-essential retail more broadly. This was in line with subsequent announcements
+by other forecasters. We also began to receive information about the economic impact, from data and
+through the business liaison program. The economic outlook will continue to evolve. Enrolments 
+increased steadily from that period onwards, as did the indications of the number of employees covered.
+At this point, they provided an estimate to the ATO of the number of eligible employees they were likely 
+to have. That over 99 per cent of forms were correctly completed, suggests the form was well-designed. 
+2 - COVID-19 Daily Cases, sourced from the Department of Health.
 ```
 
-#Treasury Speech x1.4 compression
+# Treasury Speech x1.4 compression (Medium-High Threshold)
 ```
-However, this will still be the single biggest economic shock Australia has faced in living memory. Costing approach for JobKeeper
-The JobKeeper program was deliberately designed as a demand driven program. We did assess that given the design of the program and the size of the subsidy, businesses had a strong incentive to participate in the program. However, the level of restrictions were broadly maintained, and there was not a move to tighten further to allow only essential activities. This was in line with subsequent announcements by other forecasters. We also began to receive information about the economic impact, from data and through the business liaison program. The economic outlook will continue to evolve. Enrolments increased steadily from that period onwards, as did the indications of the number of employees covered. At this point, they provided an estimate to the ATO of the number of eligible employees they were likely to have. That over 99 per cent of forms were correctly completed, suggests the form was well-designed.
+However, this will still be the single biggest economic shock Australia has faced in living memory. 
+Costing approach for JobKeeper
+The JobKeeper program was deliberately designed as a demand driven program. 
+We did assess that given the design of the program and the size of the subsidy, businesses had a 
+strong incentive to participate in the program. However, the level of restrictions were broadly maintained, 
+and there was not a move to tighten further to allow only essential activities. This was in line with 
+subsequent announcements by other forecasters. We also began to receive information about the economic impact, 
+from data and through the business liaison program. The economic outlook will continue to evolve. 
+Enrolments increased steadily from that period onwards, as did the indications of the number of employees covered. 
+At this point, they provided an estimate to the ATO of the number of eligible employees they were likely to have. 
+That over 99 per cent of forms were correctly completed, suggests the form was well-designed.
 ```
-#Treasury Speech x1.5 compression
+# Treasury Speech x1.5 compression (High threshold)
 ```
-However, this will still be the single biggest economic shock Australia has faced in living memory. However, the level of restrictions were broadly maintained, and there was not a move to tighten further to allow only essential activities. This was in line with subsequent announcements by other forecasters. The economic outlook will continue to evolve. That over 99 per cent of forms were correctly completed, suggests the form was well-designed.
+However, this will still be the single biggest economic shock Australia has faced in living memory. 
+However, the level of restrictions were broadly maintained, and there was not a move to tighten further 
+to allow only essential activities. This was in line with subsequent announcements by other forecasters. 
+The economic outlook will continue to evolve. That over 99 per cent of forms were correctly completed, 
+suggests the form was well-designed.
 ```
