@@ -1,6 +1,11 @@
+import nltk
+nltk.download()
+nltk.download('punkt')
+
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.tokenize import PunktSentenceTokenizer
 
 text_str = '''
 Globally there have been over 7 million cases of COVID-19 and more than 400,000 deaths. The virus continues to spread in many countries delivering devastating health and economic outcomes.
@@ -135,6 +140,8 @@ The updated costings of the program which reflect that there is significantly le
 6 - Subsequently, the 5 May release indicated an overall decrease in the total wages paid of 8.2 per cent and employee jobs of 7.5 per cent between the weeks ending 14 March and 18 April. The release on 19 May indicated an overall decrease in the total wages paid of 5.4 per cent and employee jobs of 7.3 per cent between the weeks ending 14 March and 2 May.
 '''
 
+SUMMARISER = 1.1
+
 
 def _create_frequency_table(text_string) -> dict:
     """
@@ -242,7 +249,7 @@ def run_summarization(text):
     threshold = _find_average_score(sentence_scores)
 
     # 5 Important Algorithm: Generate the summary
-    summary = _generate_summary(sentences, sentence_scores, 1.5 * threshold)
+    summary = _generate_summary(sentences, sentence_scores, SUMMARISER * threshold)
 
     return summary
 
