@@ -3,7 +3,7 @@ This repository contains the Python source codes using NLP techniques such as Te
 
 Below are some outputs of machine summarisation using speech data.
 
-# Treasury Speech x1.2 compression (Low Threshold --Verbose)
+# Treasury Speech x1.2 compression (Low Threshold - Verbose)
 ```
 However, this will still be the single biggest economic shock Australia 
 has faced in living memory. As the Secretary of the Treasury, I take 
