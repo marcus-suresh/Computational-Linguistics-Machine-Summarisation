@@ -1,7 +1,7 @@
 # Computational Linguistics - Machine Summarisation
 This repository contains the Python source codes using NLP techniques such as Term Frequency–Inverse Document Frequency (TF-IDF) algorithm as well as other NLP text processing methods to generate machine summarisations of input text based on a compression score. The higher the compression, the more concise the output summary will be. 
 
-Below are some outputs of machine summarisation using speech data.
+Below are some outputs of machine summarisation using speech data from Treasury: https://treasury.gov.au/speech/opening-statement-june-2020-senate-select-committee-covid-19
 
 # Treasury Speech x1.2 compression (Low Threshold - Verbose)
 ```
