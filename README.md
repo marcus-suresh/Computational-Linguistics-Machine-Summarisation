@@ -1,75 +1,29 @@
 # Computational Linguistics - Machine Summarisation
-This repository contains the Python source codes using NLP techniques such as Term Frequency–Inverse Document Frequency (TF-IDF) algorithm as well as other NLP text processing methods to generate machine summarisations of input text based on a compression score. The higher the compression, the more concise the output summary will be. 
+This repository contains the Python source codes that harness NLP techniques such as Term Frequency–Inverse Document Frequency (TF-IDF) algorithm as well as other NLP text processing methods, such as tokenisation and lemmatisation to feature rank tokens (words) within sentances to then score sentances by its level of saliency. Using this salience metric, we can then synthetically splice together machine generated summaries of any input text. The extent of the summarisation is determined by a user input - **Compression**. The higher the compression, the more concise the output summary will be. 
 
-Below are some outputs of machine summarisation using speech data from Treasury: https://treasury.gov.au/speech/opening-statement-june-2020-senate-select-committee-covid-19
+Using the Govenor of the RBA's Monetary Policy meeting minutes as a target document, I highlight below the machine generated summary outputs by varying degrees of compression:
 
-# Treasury Speech x1.2 compression (Low Threshold - Verbose)
+ **Source Document - Minutes of the Monetary Policy Meeting of the Reserve Bank Board - November (Word count = 3937 words)** 
+ 
+ https://www.rba.gov.au/monetary-policy/rba-board-minutes/2022/2022-11-01.html
+
+# Minutes of the Monetary Policy Meeting of the RBA - Low compression (871 words  - x4.5 compression)
 ```
-However, this will still be the single biggest economic shock Australia 
-has faced in living memory. As the Secretary of the Treasury, I take 
-full responsibility for the revised costing of the JobKeeper program and 
-all matters associated with the advice that Treasury has provided. Costing approach for JobKeeper
-The JobKeeper program was deliberately designed as a demand driven program. 
-This means the extent of the program would flex in response to the need for the program. 
-As is the case for any demand driven program, the level of uncertainty around the individual program’s 
-costing is larger than other program designs. When Treasury costed the JobKeeper program two methods were used. 
-We did assess that given the design of the program and the size of the subsidy, businesses had a strong incentive 
-to participate in the program. On 3 April, National Cabinet continued to focus on the central assumption of 6 months 
-of restrictions. However, the level of restrictions were broadly maintained, and there was not a move to tighten 
-further to allow only essential activities. Such a move would have restricted activities such as construction, 
-manufacturing and non-essential retail more broadly. As decisions evolved around the degree of economic restrictions, 
-assessments of the likely severity of the economic contraction also evolved. This was in line with subsequent announcements 
-by other forecasters. We also began to receive information about the economic impact, from data and through the business 
-liaison program. The economic outlook will continue to evolve. Roll out of the JobKeeper program
-The Jobkeeper program opened for enrolment on 20 April, following strong interest from business through the 
-ATO register of interest. Enrolments increased steadily from that period onwards, as did the indications of 
-the number of employees covered. Despite the economic outlook not being as severe as assumed in the costing, 
-the reported JobKeeper enrolments data from the ATO tracked steadily towards the original costings estimate. 
-First businesses had to enrol in the program after assessing they met the turnover test. At this point, they 
-provided an estimate to the ATO of the number of eligible employees they were likely to have. The enrolment 
-data which were the subject of the reporting error, were collected to provide an early estimate of the number 
-of expected employees likely to access the JobKeeper program. That over 99 per cent of forms were correctly 
-completed, suggests the form was well-designed. 2 - COVID-19 Daily Cases, sourced from the Department of Health.
+Inflation outcomes for the major advanced economies had continued mostly to surprise on the upside – noticeably for the euro area, where higher prices for food and energy had boosted headline inflation. Core inflation had remained high in both the United States and the euro area, with services prices increasing strongly in these economies. Members noted that gas prices in the euro area had declined as storage levels reached capacity and mild weather in the northern hemisphere autumn helped to reduce demand relative to previous years; prices were, however, still above levels prevailing before the pandemic. There were tentative signs of an inflection point in some countries, with falls in employment being recorded recently. By contrast, US employment had continued to grow and unemployment was still very low, although survey data suggested that jobs had become easier to fill in recent months. Members noted the apparent divergence between indicators of consumer sentiment and household spending and discussed the outlook for spending. Members noted that the outlook for machinery and equipment investment remained positive overall. Members discussed the September quarter inflation data, which were a little above the Bank’s forecast. In underlying terms, inflation was a little over 6 per cent, with most components of the CPI rising at annualised rates of more than 3 per cent. Members noted that supply-chain issues and strong demand had continued to boost inflation for new dwellings and consumer durables. Members discussed the outlook for energy prices, noting the very large forecast increases in electricity and gas prices that had been outlined in the October 2022–23 Australian Government Budget, and which had been factored into the Bank’s revised inflation forecast. Members noted the likelihood of second-round effects on inflation from higher energy prices. Members discussed the housing market. The labour market remained tight, with job vacancies and advertisements at very high levels. Members noted that, over preceding months, the strong demand for labour had translated into relatively little additional employment as spare capacity in the labour market had largely been absorbed. Members discussed the review of the Bank’s forecasts over the preceding year. In common with other forecasting models used in Australia and abroad, the Bank’s models underestimated inflation. Over the preceding month, market participants had revised up their expectations for further increases in policy rates in some advanced economies. Members noted that some central banks, including the US Federal Reserve, had observed early signs of moderation in growth in demand. Members noted that UK bond yields had subsequently retraced some of the earlier sharp rise following temporary bond purchases by the Bank of England, announcements that the government would not proceed with most of the fiscal stimulus measures in the mini budget and the appointment of a new Prime Minister. Members noted that the US dollar had appreciated considerably over 2022, particularly against the Japanese yen. In most emerging market economies, central banks had increased policy rates further in response to high inflation. By contrast, market economists expected the peak in the cash rate to be a little lower than this. Members noted that, given the cumulative increase in interest rates prior to the November meeting, scheduled housing mortgage payments as a share of household income were expected to increase to levels not seen since around 2010. Members observed that, prior to the pandemic, the Board had used forward guidance to varying degrees, with the guidance generally being qualitative in nature. Members noted that the time-based element of the forward guidance had been prominent in media and market commentary and had come to dominate the interpretation of the Board’s forward guidance. Members noted that the message about the likely timing of future cash rate increases had been complicated by the yield target. Members noted the public’s interest in understanding the factors that drive the Board’s decisions and that this understanding is an important element in ensuring policy effectiveness and accountability. wages). Considerations for monetary policy
+In considering the policy decision, members noted that inflation in Australia remained too high, as was the case in most countries. Inflation in the September quarter was a little higher than had been expected and had contributed to a modest upward revision of the Bank’s central forecast. Members emphasised the importance of this continuing to be the case. Members noted that the Australian economy had continued to grow solidly. The labour market remained very tight and many firms were having difficulty hiring workers. Wages growth had continued to pick up from the low rates of recent years, although it remained lower than in many other advanced economies. One of these sources of uncertainty is the outlook for the global economy, which had deteriorated over prior months. Members noted that wages growth had not reached levels that would be inconsistent with the inflation target. While future trends were uncertain, wages growth remained below that in a number of other advanced economies. Inflation was at a 30-year high in advanced economies and was broadly based. It was also noted that interest rates were still fairly low in a historical context. Conversely, the Board is prepared to keep rates unchanged for a period while it assesses the state of the economy and the inflation outlook. Interest rates are not on a pre-set path.
 ```
 
-# Treasury Speech x1.3 compression (Medium threshold)
+# Minutes of the Monetary Policy Meeting of the RBA - Medium compression  (261 words - x15.1 compression)
 ```
-However, this will still be the single biggest economic shock Australia has faced in living memory. 
-Costing approach for JobKeeper
-The JobKeeper program was deliberately designed as a demand driven program. As is the case for 
-any demand driven program, the level of uncertainty around the individual program’s costing is 
-larger than other program designs. We did assess that given the design of the program and the 
-size of the subsidy, businesses had a strong incentive to participate in the program. However, 
-the level of restrictions were broadly maintained, and there was not a move to tighten further 
-to allow only essential activities. Such a move would have restricted activities such as construction, 
-manufacturing and non-essential retail more broadly. This was in line with subsequent announcements
-by other forecasters. We also began to receive information about the economic impact, from data and
-through the business liaison program. The economic outlook will continue to evolve. Enrolments 
-increased steadily from that period onwards, as did the indications of the number of employees covered.
-At this point, they provided an estimate to the ATO of the number of eligible employees they were likely 
-to have. That over 99 per cent of forms were correctly completed, suggests the form was well-designed. 
-2 - COVID-19 Daily Cases, sourced from the Department of Health.
+Inflation outcomes for the major advanced economies had continued mostly to surprise on the upside – noticeably for the euro area, where higher prices for food and energy had boosted headline inflation. By contrast, US employment had continued to grow and unemployment was still very low, although survey data suggested that jobs had become easier to fill in recent months. In underlying terms, inflation was a little over 6 per cent, with most components of the CPI rising at annualised rates of more than 3 per cent. The labour market remained tight, with job vacancies and advertisements at very high levels. Over the preceding month, market participants had revised up their expectations for further increases in policy rates in some advanced economies. In most emerging market economies, central banks had increased policy rates further in response to high inflation. By contrast, market economists expected the peak in the cash rate to be a little lower than this. wages). Inflation in the September quarter was a little higher than had been expected and had contributed to a modest upward revision of the Bank’s central forecast. The labour market remained very tight and many firms were having difficulty hiring workers. One of these sources of uncertainty is the outlook for the global economy, which had deteriorated over prior months. Inflation was at a 30-year high in advanced economies and was broadly based. Conversely, the Board is prepared to keep rates unchanged for a period while it assesses the state of the economy and the inflation outlook. Interest rates are not on a pre-set path.
 ```
 
-# Treasury Speech x1.4 compression (Medium-High Threshold)
+# Minutes of the Monetary Policy Meeting of the RBA -  High compression  (210 words - x18.7 compression)
 ```
-However, this will still be the single biggest economic shock Australia has faced in living memory. 
-Costing approach for JobKeeper
-The JobKeeper program was deliberately designed as a demand driven program. 
-We did assess that given the design of the program and the size of the subsidy, businesses had a 
-strong incentive to participate in the program. However, the level of restrictions were broadly maintained, 
-and there was not a move to tighten further to allow only essential activities. This was in line with 
-subsequent announcements by other forecasters. We also began to receive information about the economic impact, 
-from data and through the business liaison program. The economic outlook will continue to evolve. 
-Enrolments increased steadily from that period onwards, as did the indications of the number of employees covered. 
-At this point, they provided an estimate to the ATO of the number of eligible employees they were likely to have. 
-That over 99 per cent of forms were correctly completed, suggests the form was well-designed.
+Inflation outcomes for the major advanced economies had continued mostly to surprise on the upside – noticeably for the euro area, where higher prices for food and energy had boosted headline inflation. By contrast, US employment had continued to grow and unemployment was still very low, although survey data suggested that jobs had become easier to fill in recent months. The labour market remained tight, with job vacancies and advertisements at very high levels. Over the preceding month, market participants had revised up their expectations for further increases in policy rates in some advanced economies. In most emerging market economies, central banks had increased policy rates further in response to high inflation. By contrast, market economists expected the peak in the cash rate to be a little lower than this. wages). Inflation in the September quarter was a little higher than had been expected and had contributed to a modest upward revision of the Bank’s central forecast. The labour market remained very tight and many firms were having difficulty hiring workers. One of these sources of uncertainty is the outlook for the global economy, which had deteriorated over prior months. Inflation was at a 30-year high in advanced economies and was broadly based. Interest rates are not on a pre-set path.
 ```
-# Treasury Speech x1.5 compression (High threshold)
+
+# Minutes of the Monetary Policy Meeting of the RBA - Very high compression (140 words - x28.1 compression )
 ```
-However, this will still be the single biggest economic shock Australia has faced in living memory. 
-However, the level of restrictions were broadly maintained, and there was not a move to tighten further 
-to allow only essential activities. This was in line with subsequent announcements by other forecasters. 
-The economic outlook will continue to evolve. That over 99 per cent of forms were correctly completed, 
-suggests the form was well-designed.
+By contrast, US employment had continued to grow and unemployment was still very low, although survey data suggested that jobs had become easier to fill in recent months. The labour market remained tight, with job vacancies and advertisements at very high levels. Over the preceding month, market participants had revised up their expectations for further increases in policy rates in some advanced economies. In most emerging market economies, central banks had increased policy rates further in response to high inflation. By contrast, market economists expected the peak in the cash rate to be a little lower than this. wages). The labour market remained very tight and many firms were having difficulty hiring workers. One of these sources of uncertainty is the outlook for the global economy, which had deteriorated over prior months. Interest rates are not on a pre-set path.
 ```
